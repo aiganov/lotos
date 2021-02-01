@@ -1,0 +1,323 @@
+/** Общие стили **/
+.card-content {
+  padding: 20px 30px 50px 30px;
+  background: #fff;
+  box-sizing: border-box;
+}
+.card-banner {
+  margin-bottom: 30px;
+  padding: 60px 40px 40px 40px;
+  background: url("../img/card-banner-backg.jpg") bottom no-repeat;
+}
+.banner-title {
+  display: inline-block;
+  margin-right: 200px;
+  margin-bottom: 13px;
+  padding: 13px 8px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 28px;
+  background: #fff;
+}
+.banner-desc {
+  display: inline-block;
+  margin-bottom: 120px;
+  padding: 2px 9px;
+  font-size: 18px;
+  line-height: 28px;
+  background: #fff;
+}
+.banner-gift {
+  display: flex;
+  align-items: flex-end;
+}
+.banner-card-img {
+  order: 1;
+}
+.banner-gift-buttons {
+  margin-right: 50px;
+  width: 332px;
+}
+.banner-gift-buttons .btn-gift {
+  margin-bottom: 15px;
+}
+.btn-gift {
+  display: inline-block;
+  width: 330px;
+  margin-right: 0px;
+  padding: 12px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  background: #EC7500;
+  box-sizing: border-box;
+}
+.btn-gift:hover {
+  cursor: pointer;
+  color: #fff;
+  background: #d36800;
+}
+.btn-gift-yellow {
+  background: #FFA400;
+}
+.btn-gift-yellow:hover {
+  background: #e69400;
+}
+.card-desc {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.card-desc-img {
+  margin-right: 30px;
+}
+.card-title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 36px;
+  color: #000000;
+}
+.card-desc-text {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 23px;
+  color: #4F4F4F;
+}
+.card-link {
+  font-size: 16px;
+  line-height: 23px;
+  text-decoration: underline;
+  color: #90A4AE;
+}
+.card-instr {
+  display: flex;
+  margin-bottom: 70px;
+}
+.card-instr-block:first-child {
+  margin-right: 40px;
+}
+.card-instr-title {
+  margin-bottom: 40px;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #000000;
+}
+.card-icon {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.card-list {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  list-style: none;
+}
+.card-list li {
+  position: relative;
+  margin-bottom: 24px;
+  padding-left: 21px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #4F4F4F;
+}
+.card-list li::before {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  content: '';
+  display: block;
+  width: 11px;
+  height: 11px;
+  background: #EC7500;
+  border-radius: 50%;
+}
+.card-remind {
+  margin-bottom: 45px;
+}
+.card-remind-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.btn-card {
+  width: 431px;
+  margin-bottom: 15px;
+  padding: 12px 30px;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #EC7500;
+  box-sizing: border-box;
+}
+.btn-card:hover {
+  color: #fff;
+  background: #d36800;
+}
+.card-info {
+  margin-top: 55px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 36px;
+}
+.card-info-tel {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
+  color: #828282;
+}
+.card-tel-desc {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 36px;
+  color: #828282;
+}
+.card-how {
+  display: flex;
+  margin-bottom: 45px;
+}
+.card-how-img {
+  flex-shrink: 0;
+  margin-left: 40px;
+}
+.card-spoiler input,
+.card-spoiler div {
+  display: none;
+}
+.card-spoiler label {
+  position: relative;
+  display: block;
+  padding-top: 15px;
+  padding-right: 50px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #4F4F4F;
+  border-top: 1px solid #BDBDBD;
+  border-bottom: 1px solid #BDBDBD;
+}
+.card-spoiler label::after {
+  position: absolute;
+  right: 16px;
+  top: 18px;
+  content: '';
+  display: block;
+  width: 16px;
+  height: 9px;
+  background: url("../img/spoiler-arrow.png") no-repeat;
+  transform: rotate(180deg);
+  transition: all 0.3s;
+}
+.card-spoiler div {
+  padding: 20px 15px;
+  font-size: 15px;
+  line-height: 21px;
+  color: #4F4F4F;
+  background: #F2F2F2;
+}
+.card-spoiler div p {
+  margin-bottom: 15px;
+}
+.card-spoiler input:checked ~ div {
+  display: block;
+}
+.card-spoiler input:checked ~ label::after {
+  transform: rotate(360deg);
+}
+.card-spoiler label:hover {
+  cursor: pointer;
+}
+.card-ofert {
+  margin-top: 70px;
+}
+.card-ofert p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 19px;
+  color: #4F4F4F;
+}
+@media screen and (max-width: 1000px) {
+  .card-title {
+    text-align: center;
+  }
+  .banner-desc {
+    margin-bottom: 20px;
+  }
+  .card-banner {
+    background-size: cover;
+  }
+  .banner-gift {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .banner-card-img {
+    order: -1;
+    margin-bottom: 20px;
+  }
+  .banner-title {
+    display: block;
+    margin-right: 0;
+    text-align: center;
+  }
+  .banner-desc {
+    display: block;
+    text-align: center;
+  }
+  .banner-gift-buttons {
+    margin-right: 0;
+    width: 100%;
+  }
+  .banner-gift-buttons .btn-gift {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+  .card-desc {
+    margin-bottom: 70px;
+    flex-direction: column;
+  }
+  .card-instr {
+    flex-direction: column;
+  }
+  .card-list li::before {
+    top: 8px;
+  }
+  .btn-card {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .card-how {
+    flex-direction: column-reverse;
+  }
+  .card-how-img {
+    margin: 0 auto;
+  }
+  .card-spoiler label::after {
+    width: 24px;
+    height: 16px;
+  }
+  .card-info {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .card-info-tel {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .card-tel-desc {
+    text-align: center;
+  }
+  .card-banner {
+    padding: 25px;
+  }
+}
